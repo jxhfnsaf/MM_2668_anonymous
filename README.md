@@ -57,8 +57,8 @@ To download extracted features used in VinVL and MVPTR, it is recommended to use
 
 For the convenience of usage, we considered three different scenarios:
 - For a quick start to use MVPTR, we provide a complete pipeline which takes raw image-text pairs as inputs, please check the [Quick Start section](#quick-start).
-- To utilize MVPTR on the already-implemented tasks (image text retrieval, vqa, SNLI-VE, and so on), please check the  section that corresponds to the task and dataset.
-- To fine-tune MVPTR on datasets that are not considered in our experiments, please check the Fine-Tuning on Custom Datasets section.
+- To utilize MVPTR on the already-implemented tasks (image text retrieval, vqa, SNLI-VE, and so on), please check the section that corresponds to the task and dataset.
+- To fine-tune MVPTR on datasets that are not considered in our experiments, please check the Fine-Tuning on [Custom Datasets section](#fine-tuning-on-custom-datasets).
 
 ### Prepare the Tools
 
@@ -405,5 +405,5 @@ vis_encoder_output:   shape [batch_size, max_img_seq_length+max_tag_length, 768]
 
 You can modify the BiImageBertRep to fit your input and output.
 
-There is an detailed step-by-step version of instructions in [INSTRUCTIONS.md](https://github.com/Junction4Nako/mvp_pytorch/blob/master/INSTRUCTIONS.md),  you can also check the pipeline implementation to check the working logic.
+There is an detailed step-by-step version of instructions in [INSTRUCTIONS.md](https://github.com/jxhfnsaf/MM_2668_anonymous/blob/main/INSTRUCTIONS.md),  you can also check the pipeline implementation to check the working logic.
 
