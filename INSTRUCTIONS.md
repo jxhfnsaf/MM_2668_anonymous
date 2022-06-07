@@ -69,7 +69,7 @@ To extract phrases in the text, we utilize [SPICE](https://github.com/peteanders
   java -Xmx8G -jar spice-1.0.jar YOUR_JSON -out YOUR_OURPUT -threads 100 -detailed
   ```
 
-- Please check the phrase format in the [id2phrase.json](https://github.com/Junction4Nako/mvp_pytorch/blob/master/datasets/mvp/id2phrase_new.json) json file (Tuple[str]).
+- Please check the phrase format in the [id2phrase.json](https://github.com/jxhfnsaf/MM_2668_anonymous/blob/main/datasets/mvp/id2phrase_new.json) json file (Tuple[str]).
 
 #### Tensorization & Encode
 
@@ -116,5 +116,5 @@ else:
 
 In this example, we ignore the situation that the string is too long and needs to be truncated.
 
-To encode the representation of the image-text pair, please check the BiImageBertRep class in [modeling_vlbert](https://github.com/Junction4Nako/mvp_pytorch/blob/master/oscar/modeling/modeling_vlbert.py), you can build your model on top of it or use it to extract representations. 
+To encode the representation of the image-text pair, please check the BiImageBertRep class in [modeling_vlbert](https://github.com/jxhfnsaf/MM_2668_anonymous/blob/main/oscar/modeling/modeling_vlbert.py), you can build your model on top of it or use it to extract representations. 
 
