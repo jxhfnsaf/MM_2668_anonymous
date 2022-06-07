@@ -48,7 +48,7 @@ mkdir pretrain_datasets
 To transform image-text pairs to fit the MVPTR input, there are several steps: 
 
 1. We utilize the off-the-shelf scene graph parser provided in [SPICE](https://github.com/peteanderson80/SPICE) to extract tuples from text, which are considered as phrase concepts.
-2. Only general phrases which appear in at least 50 sentences in the pre-training corpus are considered, the id2phrase mapping is stored in [id2phrase](). Extracted phrases for coco, Flickr, vqa, visual entailment, referring expression can be downloaded from [here](https://drive.google.com/file/d/1fl8vXvxw9ZXmLaQ6a_4KrM-Zi1w_PgwN/view?usp=sharing).
+2. Only general phrases which appear in at least 50 sentences in the pre-training corpus are considered, the id2phrase mapping is stored in [id2phrase](https://github.com/jxhfnsaf/MM_2668_anonymous/blob/main/datasets/mvp/id2phrase_new.json). Extracted phrases for coco, Flickr, vqa, visual entailment, referring expression can be downloaded from [here](https://drive.google.com/file/d/1fl8vXvxw9ZXmLaQ6a_4KrM-Zi1w_PgwN/view?usp=sharing).
 3. Object features and tags are extracted from images with [the object detector used in VinVL](https://github.com/microsoft/scene_graph_benchmark). (For the convenience of usage, we provide a torchscripted object detector model, please check the part below.)
 
 To download extracted features used in VinVL and MVPTR, it is recommended to use [azcopy](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10#download-azcopy).
@@ -56,8 +56,8 @@ To download extracted features used in VinVL and MVPTR, it is recommended to use
 ## Usage
 
 For the convenience of usage, we considered three different scenarios:
-- For a quick start to use MVPTR, we provide a complete pipeline which takes raw image-text pairs as inputs, please check the Quick Start section.
-- To utilize MVPTR on the already-implemented tasks (image text retrieval, vqa, SNLI-VE, Referring Expression), please check the  section that corresponds to the task and dataset.
+- For a quick start to use MVPTR, we provide a complete pipeline which takes raw image-text pairs as inputs, please check the [Quick Start section](#quick-start).
+- To utilize MVPTR on the already-implemented tasks (image text retrieval, vqa, SNLI-VE, and so on), please check the  section that corresponds to the task and dataset.
 - To fine-tune MVPTR on datasets that are not considered in our experiments, please check the Fine-Tuning on Custom Datasets section.
 
 ### Prepare the Tools
