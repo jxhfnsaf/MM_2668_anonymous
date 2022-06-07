@@ -730,8 +730,6 @@ def test_coarse(args, model, eval_dataset):
     with torch.no_grad():
         full_txt_emb = torch.cat(full_txt_emb, dim=0)
         full_img_emb = torch.cat(full_img_emb, dim=0)
-        torch.save(full_txt_emb, '/opt/tiger/tmp_dir/txt_emb.pt')
-        torch.save(full_img_emb, '/opt/tiger/tmp_dir/img_emb.pt')
         num_imgs = int(full_img_emb.shape[0] / args.num_captions_per_img_train)
         assert(full_img_emb.shape[0] % args.num_captions_per_img_train == 0)
         select_index = [i*args.num_captions_per_img_train for i in range(num_imgs)]
