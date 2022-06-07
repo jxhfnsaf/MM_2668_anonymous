@@ -187,10 +187,6 @@ def main():
     # train_dataloaders = make_data_loader_ds(
     #     args, is_distributed=False)
 
-    # for batch in train_dataloaders[0]:
-    #     torch.save(batch, '/opt/tiger/bivinvl_test_input.pt')
-    #     break
-    # return None
 
     if not os.path.exists(args.output_dir):
         mkdir(args.output_dir)
