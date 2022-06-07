@@ -107,7 +107,7 @@ Notice that it is not recommended to use the pipeline for fine-tuning, but you c
 
 As the original pre-trained VinVL uses the test split of Flickr30k during pre-training, we exclude those data and pre-train our MVP to avoid the information leaking:
 
-1. Download the pre-trained checkpoint for flickr30k retrieval: [mvp_base_for_fk](https://drive.google.com/file/d/19L2ej4s-fhm5qCQzI2g3pxgVIrdd9FeV/view?usp=sharing)
+1. Download the pre-trained checkpoint for flickr30k retrieval: [mvptr_base_for_fk](https://drive.google.com/file/d/19L2ej4s-fhm5qCQzI2g3pxgVIrdd9FeV/view?usp=sharing)
 
 2. Download the extracted features and captions from: [fk_ir](https://drive.google.com/file/d/1L4xXrk3q0e6DsBiucJkUFWbxqPLtzRjY/view?usp=sharing)
 
@@ -159,7 +159,7 @@ We found that MVP quickly converges to the best performance within 2 epochs.
    path/to/azcopy copy 'https://biglmdiag.blob.core.windows.net/vinvl/datasets/coco_ir' datasets/ --recursive
    ```
 
-3. Download the pre-trained checkpoint: [mvp_base_for_coco](https://drive.google.com/file/d/1VUl9TbtkKYB8BDc9Xk-a9G0XYTnyUwpz/view?usp=sharing)
+3. Download the pre-trained checkpoint: [mvptr_base_for_coco](https://drive.google.com/file/d/1VUl9TbtkKYB8BDc9Xk-a9G0XYTnyUwpz/view?usp=sharing)
 
 4. Training with evaluation on the 1k minival split:
 
@@ -196,7 +196,7 @@ We found that MVP quickly converges to the best performance within 2 epochs.
 
 ### VQA
 
-1. In VQA, we found it useful to initialize the classifier head with the weights used in MLM task, the initialized checkpoint can be downloaded from: [mvp_base_for_vqa](https://drive.google.com/file/d/1QsUHakD1tEip7txe7BUiMgDcnI1AtOva/view?usp=sharing)
+1. In VQA, we found it useful to initialize the classifier head with the weights used in MLM task, the initialized checkpoint can be downloaded from: [mvptr_base_for_vqa](https://drive.google.com/file/d/1QsUHakD1tEip7txe7BUiMgDcnI1AtOva/view?usp=sharing)
 
 2. Download vqa dataset:
 
@@ -251,7 +251,7 @@ Here is the detailed evaluation results from the VQA challange on EvalAI:
 
 1. Download the dataset: coming soon.
 
-2. Download the pre-trained checkpoint: [mvp_base](https://drive.google.com/file/d/1t9S9ejwpit7UO_Y5f9pYnn7p9g-AtWtC/view?usp=sharing)
+2. Download the pre-trained checkpoint: [mvptr_base](https://drive.google.com/file/d/1t9S9ejwpit7UO_Y5f9pYnn7p9g-AtWtC/view?usp=sharing)
 
 3. Training:
 
@@ -288,7 +288,7 @@ Here is the detailed evaluation results from the VQA challange on EvalAI:
 
 1. Download the dataset: [re](https://drive.google.com/file/d/1DmDM351JQdaTbS-WwU7VtxwJX5QitKUY/view?usp=sharing), we also re-use the tsv-format coco data.
 
-2. Download the pre-trained checkpoint: [mvp_base](https://drive.google.com/file/d/1t9S9ejwpit7UO_Y5f9pYnn7p9g-AtWtC/view?usp=sharing)
+2. Download the pre-trained checkpoint: [mvptr_base](https://drive.google.com/file/d/1t9S9ejwpit7UO_Y5f9pYnn7p9g-AtWtC/view?usp=sharing)
 
 3. Training:
 
